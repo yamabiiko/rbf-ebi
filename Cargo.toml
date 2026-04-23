@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-rand = "0.8.4"
+rand = "0.8.6"
 bitvec = "1"
 either = "1.12.0"
 statrs = "0.18.0"
