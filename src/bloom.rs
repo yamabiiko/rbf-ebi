@@ -8,6 +8,7 @@ use std::{
 
 use bitvec::{bitvec, slice::BitSlice, vec::BitVec};
 
+#[derive(Debug)]
 pub struct BloomFilter<T: ?Sized> {
     base: BitVec,
     hashers: [RandomState; 2],

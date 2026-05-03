@@ -51,7 +51,7 @@ pub trait BuildRatelessIBLT<T>
 where
     T: Symbol,
 {
-    fn riblt_from(&self, elements: &[T]) -> RatelessIBLT<T> {
+    fn riblt_from(&self, elements: &[T]) -> RatelessIBLT<'_, T> {
         let mut riblt = RatelessIBLT::new();
         elements.iter().for_each(|symbol| {
             riblt.add_symbol(symbol.clone());

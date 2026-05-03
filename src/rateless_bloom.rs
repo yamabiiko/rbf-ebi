@@ -23,6 +23,7 @@ pub trait StoppingStrategy<T: Hash> {
     fn should_stop(&mut self, bf: &mut RatelessBF<T>) -> Option<(Vec<T>, Vec<T>)>;
 }
 
+#[derive(Debug)]
 pub struct RatelessBF<T: Hash> {
     bloom_filters: Vec<BloomFilter<T>>,
     data: Vec<T>,
